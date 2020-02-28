@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div {
+            height: 1000px;
+            width: 800px;
+        }
+
+        .intro {
+            height: 350px;
+            width: 800px;
+            margin: auto;
+            position: relative;
+            top: 0px;
+            background-image: url(xyz.jpg);
+        }
+
+        .one {
+            height: 335px;
+            width: 385px;
+            position: absolute;
+            left: 400px;
+            top: 19px;
+            background-color: white;
+            color: black;
+        }
+
+        .line {
+            height: 5px;
+            width: 345px;
+            display: block;
+            background-color: rgb(165, 7, 60);
+        }
+
+        #line_1 {
+            height: 5px;
+            width: 50%;
+            background-color: black;
+        }
+
+        p {
+            color: rgb(165, 7, 60);
+            margin-left: 20px;
+        }
+
+        img {
+            position: absolute;
+            bottom: 0px;
+            left: 10px;
+            z-index: 0;
+        }
+
+        h2 {
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .education {
+            color: black;
+            font-size: 25px;
+            margin-left: 20px;
+            height: 600px;
+            width: 350px;
+        }
+
+        .content {
+            color: black;
+            height: 300px;
+            width: 230px;
+            margin-top: -30px;
+            margin-left: -20px;
+            position: absolute;
+            top: 480px;
+            left: 190px;
+            font-size: large;
+        }
+
+
+        .year {
+            color: rgb(165, 7, 60);
+            margin-top: -30px;
+            margin-left: -20px;
+            height: 350px;
+            width: 135px;
+        }
+
+        .a {
+            position: absolute;
+            top: 700px;
+        }
+
+        .lang {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dot {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(165, 7, 60);
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 100px;
+            left: 120px
+        }
+
+        .dt {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(165, 7, 60);
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 100px;
+            left: 150px
+        }
+
+        .dt1 {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(165, 7, 60);
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 100px;
+            left: 180px
+        }
+
+        .dt2 {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(165, 7, 60);
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 100px;
+            left: 210px
+        }
+
+        .dt3 {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(165, 7, 60);
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 100px;
+            left: 240px;
+        }
+
+        .t1 {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(165, 7, 60);
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 150px;
+            left: 120px;
+        }
+
+        .t2 {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(165, 7, 60);
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+
+        .t3 {
+            height: 10px;
+            width: 10px;
+            border: 5px solid black;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 150px;
+            left: 180px;
+        }
+
+        .t4 {
+            height: 10px;
+            width: 10px;
+            border: 5px solid black;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 150px;
+            left: 210px;
+        }
+
+        .t5 {
+            height: 10px;
+            width: 10px;
+            border: 5px solid black;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 150px;
+            left: 240px;
+        }
+
+        .exp {
+            color: black;
+            font-size: 25px;
+            margin-left: 320px;
+            height: 350px;
+            width: 350px;
+            position: absolute;
+            top: 360px;
+            left: 110px;
+        }
+
+        .yr {
+            color: rgb(165, 7, 60);
+            height: 360px;
+            width: 110px;
+            position: absolute;
+            top: 100px;
+            left: 250px;
+        }
+
+        .btn {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+            position: absolute;
+            top: 167px;
+            left: 580px;
+        }
+
+        .progress_bar {
+            width: 320px;
+            height: 20px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            margin-left: 430px;
+            margin-top: -159px;
+        }
+
+        .progress_bar1 {
+            width: 320px;
+            height: 20px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            margin-left: 430px;
+            margin-top: -94px;
+        }
+
+        .progress_bar2 {
+            width: 320px;
+            height: 20px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            margin-left: 430px;
+            margin-top: -34px;
+        }
+
+        .progress_bar3 {
+            width: 320px;
+            height: 20px;
+            background-color: white;
+            border: 1px solid black;
+            position: absolute;
+            margin-left: 430px;
+            margin-top: 30px;
+        }
+
+        #html_bar {
+            width: 80%;
+            height: 20px;
+            background-color: rgb(165, 7, 60);
+            position: absolute;
+            margin-left: 0px;
+        }
+
+        #css_bar {
+            width: 70%;
+            height: 20px;
+            background-color: rgb(165, 7, 60);
+            position: absolute;
+            margin-left: 0px;
+        }
+
+        #javascript_bar {
+            width: 45%;
+            height: 20px;
+            background-color: rgb(165, 7, 60);
+            position: absolute;
+            margin-left: 0px;
+        }
+
+        #creativity_bar {
+            width: 75%;
+            height: 20px;
+            background-color: rgb(165, 7, 60);
+            position: absolute;
+            margin-left: 0px;
+        }
+
+        .block {
+            width: 800px;
+            height: 10px;
+            background-color: rgb(165, 7, 60);
+            position: absolute;
+            top: 1180px;
+        }
+
+        #black_block {
+            width: 50%;
+            height: 10px;
+            background-color: black;
+            position: absolute;
+            margin-left: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="intro">
+            <div class="one">
+                <h1 style="margin-left: 20px;">
+                    <b>
+                        ABOUT ME
+                    </b>
+                    <div class="line">
+                        <div id="line_1"></div>
+                    </div>
+                </h1>
+                <p style="
+                       color: black;
+                       font: italic 14px/30px Georgia, serif;
+                       ">
+                    Hey! Im Aditi Jain, a 20 year old BMS student fascinated with building. From building a website to
+                    building a story,My heart beats the same for both. Leaving things half done isnt my style,which is
+                    why i wont just leave you after designing your website , making sure it ranks on top ,kind of
+                    tickles the digital marketer in me. Though I have to admit, directing a short film is a lot easier
+                    than creating a website, but each is a journey in itself
+                </p>
+            </div>
+            <div class="two">
+                <h2 style="z-index: 1;">
+                    <strong>
+                        ADITI <BR>
+                        JAIN
+                    </strong>
+                </h2>
+                <img src="xy.jpeg" width="350px" height="320px">
+            </div>
+        </div>
+        <div class="education">
+            <h3 style="font-family: Arial, Helvetica, sans-serif;">
+                <b>
+                    EDUACATION
+                </b>
+            </h3><br>
+            <div class="year">
+                <p>2019<br><br><br>
+                    2017-2019<br><br><br>
+                    2015-2016</p>
+            </div>
+            <div class="content">
+                <br>
+                School of Code<br>
+                IIDE<br><br><br>
+                BMS<br>
+                K.C.COLLEGE<br><br><br>
+                High School<br>
+                N.M.COLLEGE
+            </div>
+
+            <div class="a">
+                <h3 style="font-family: Arial, Helvetica, sans-serif;">
+                    <b>
+                        LANGUAGES
+                    </b>
+                </h3>
+                <div class="lang">
+                    <li>English</li><br>
+                    <li>french</li>
+                </div>
+                <div class="dot"></div>
+                <div class="dt"></div>
+                <div class="dt1"></div>
+                <div class="dt2"></div>
+                <div class="dt3"></div>
+                <div class="t1"></div>
+                <div class="t2"></div>
+                <div class="t3"></div>
+                <div class="t4"></div>
+                <div class="t5"></div>
+            </div>
+        </div>
+        <div class="exp">
+            <h3 style="font-family: Arial, Helvetica, sans-serif;">
+                <b>
+                    WORK EXPERIENCE
+                </b>
+            </h3>
+            <div class="yr">
+                <p>2019<br><br><br>
+                    2017<br><br><br>
+                    2015
+                </p>
+            </div>
+            <div class="info" style="font-size: large;
+                                        font-family:Arial, Helvetica, sans-serif;
+                                        ">
+                <br>
+                Content creator<br>
+                IDEATE Global<br><br><br>
+
+                Social Media Handler<br>
+                IIMUN<br><br><br>
+                Asst.Director<br>
+                Mad Act Entertainment<br>
+            </div>
+        </div>
+        <div class="skill">
+            <h3 style="
+                           font-family:Arial, Helvetica, sans-serif;
+                           color: black;
+                           position: absolute;
+                           top: 700px;
+                           left:435px;
+                           font-size: 27px;
+                           ">
+                <b>
+                    SKILLS
+                </b>
+            </h3>
+
+            <p style="
+                             color: black;
+                             position: absolute;
+                             top:780px;
+                             left:420px;
+                             font-size: larger;
+                             font-family: Arial, Helvetica, sans-serif;
+                             ">
+                <b>
+                    HTML
+                </b>
+            </p>
+            <div class="progress_bar">
+                <div id="html_bar">
+                    <b>
+                    </b>
+                </div>
+            </div>
+            <p style="
+                         color: black;
+                         position: absolute;
+                         top:845px;
+                         left:420px;
+                         font-size: larger;
+                         font-family: Arial, Helvetica, sans-serif;
+                         ">
+                <b>
+                    CSS
+                </b>
+            </p>
+            <div class="progress_bar1">
+                <div id="css_bar">
+                    <b>
+                    </b>
+                </div>
+            </div>
+            <p style="
+                        color: black;
+                        position: absolute;
+                        top:905px;
+                        left:420px;
+                        font-size: larger;
+                        font-family: Arial, Helvetica, sans-serif;
+                        ">
+                <b>
+                    Javascript
+                </b>
+            </p>
+            <div class="progress_bar2">
+                <div id="javascript_bar">
+                    <b>
+                    </b>
+                </div>
+            </div>
+            <p style="
+                        color: black;
+                        position: absolute;
+                        top:965px;
+                        left:420px;
+                        font-size: larger;
+                        font-family: Arial, Helvetica, sans-serif;
+                        ">
+                <b>
+                    Creativiy
+                </b>
+            </p>
+            <div class="progress_bar3">
+                <div id="creativity_bar">
+                    <b>
+                    </b>
+                </div>
+            </div>
+        </div>
+        <div class="contact" style="
+                          font-family:  Arial, Helvetica, sans-serif;
+                          color: black; position: absolute;
+                          top: 920px;
+                          left:30px;
+                          font-size: 30px;
+                          ">
+            <b>
+                CONTACT
+            </b>
+            <p style="
+                     color: rgb(165, 7, 60);
+                     font-size: large;
+                     font-family: Arial, Helvetica, sans-serif;
+                     position: absolute;
+                     top: 40px;
+                     left: -10px;
+                     ">
+                <strong>
+                    Address
+                </strong><br>
+                501,Rasraj Heights,<br>
+                Borivali.<br>
+                9004383865<br>
+            </p>
+
+            <a href="https://www.instagram.com/aditihingad_0724/">
+                <img src="insta.jpg" height="80px" width="80px" style="position: absolute;top: 150px;left: 0px;">
+            </a>
+
+            <a href="https://twitter.com/AditiHingad">
+                <img src="Twitter.png" height="50px" width="50px" style="position: absolute;top: 165px;left: 70px;">
+            </a>
+
+            <a href="mailto:a2jhingad@gmail.com">
+                <img src="gmail.png" height="60px" width="50px" style="position: absolute;top: 160px;left: 130px;">
+            </a>
+
+            <a href="C:\Users\Lenovo\Documents\New folder\resume.html" download="resume.html">
+                <button class="btn">
+                    <i class="fa fa-download">
+                    </i>
+                    Download
+                </button>
+            </a>
+        </div>
+        <div class="block">
+            <div id="black_block"></div>
+        </div>
+    </div>
+</body>
+
+</html>
